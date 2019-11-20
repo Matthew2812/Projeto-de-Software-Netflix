@@ -1,0 +1,70 @@
+Descrição de Usos de Caso
+
+Caso de Uso: Cadastrar-se
+Sumário: Usuário realiza cadastro na plataforma
+Ator Primário: Usuário
+Pré Condição: Acesso à plataforma
+Fluxo Principal:
+- O usuário solicita o cadastramento
+- Preenche o formulário
+- Seleciona o plano
+- Confirma a assinatura
+- A plataforma valida os dados informados
+- O usuário confirma o e-mail
+- A plataforma cria uma conta do novo assinante
+Fluxo Alternativo:
+- Os dados informados pelo usuários estão incorretos
+- A plataforma solicita correção dos dados
+Pós Condição: O usuário torna-se assinante e tem acesso ao conteúdo
+
+
+
+Caso de Uso: Criar Perfil
+Sumario: O assinante cria um novo perfil para sua conta
+Ator Primário: Assinante
+Pré Condições: Estar logado na plataforma
+Fluxo principal:
+- O assinante acessa o gerenciamento de perfis
+- O assinante seleciona a criação de perfil
+- O assinante preenche o campo do nome do perfil
+- O assinante escolhe o avatar do perfil 
+- O assinante escolhe o tipo do perfil (infantil ou padrão)
+- O assinante confirma a criação do perfil
+Fluxo Alternativo:
+- O assinante poderá criar até cinco perfis
+- A plataforma notificará que o assinante não pode mais criar perfis
+Pós condições: A tela de seleção de perfil é exibida
+
+
+
+Caso de Uso: Deletar Perfil
+Sumario: O assinante deleta um perfil existente em sua conta
+Ator Primário: Assinante
+Pré Condições: Estar logado na plataforma, perfil existir na conta
+Fluxo principal:
+- O assinante acessa o gerenciamento de perfis
+- O assinante seleciona a opção "excluir perfil"
+- O assinante confirma a remoção do perfil
+Fluxo Alternativo:
+- O assinante cancela a remoção do perfil
+- O assinante tenta remover o perfil que está utilizando no momento
+- A plataforma notifica que não é possível remover um perfil que o assinante esteja utilizando
+Pós condições: O perfil é removido e a tela de seleção de perfil é exibida.
+
+
+
+Caso de Uso: Acessar Perfil
+Sumario: O assinante acessa um perfil de sua conta
+Ator Primário: Assinante
+Pré condições: Estar logado na plataforma
+Fluxo Principal:
+- A tela de Perfis é exibida
+- O assinante seleciona um perfil de sua conta
+Fluxo alternativo:
+- O assinante acessa o gerenciamento de perfis
+- O assinante seleciona outro perfil de sua conta
+Pós Condição: A tela de navegação é exibida e o assinante tem acesso aos conteúdos/catálogos
+
+
+
+
