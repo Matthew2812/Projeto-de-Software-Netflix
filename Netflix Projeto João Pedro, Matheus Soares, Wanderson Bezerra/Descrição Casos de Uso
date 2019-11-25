@@ -63,8 +63,78 @@ Fluxo Principal:
 Fluxo alternativo:
 - O assinante acessa o gerenciamento de perfis
 - O assinante seleciona outro perfil de sua conta
-Pós Condição: A tela de navegação é exibida e o assinante tem acesso aos conteúdos/catálogos
+Pós Condição: A tela de navegação é exibida e o assinante tem acesso aos catálogos/conteúdos
 
 
 
+Caso de Uso: Selecionar Conteúdo
+Sumario: O assinante seleciona um conteúdo de algum catálogo
+Ator Primário: Assinante
+Pré Condições: Execução Caso de Uso "Acessar Perfil"
+Fluxo Principal:
+- O assinante escolhe seleciona um conteúdo de algum catálogo
+Fluxo Alternativo:
+- O assinante pode buscar algum conteúdo específico
+Pós Condição: As informações do conteúdo são exibidas na tela
 
+
+
+Caso de Uso: Adicionar a Lista
+Sumario: O assinante adiciona um conteúdo a sua lista de favoritos
+Ator Primário: Assinante
+Pré Condições: Execução Caso de Uso "Selecionar Conteúdo"
+Fluxo Principal:
+- O assinante adiciona o conteúdo a lista de favoritos
+Fluxo alternativo:
+- O conteúdo já foi adicionado e o assinante o remove da lista
+Pós Condição: A plataforma notifica que o conteúdo foi adicionado a lista de favoritos
+
+
+
+Caso de Uso: Avaliar Conteúdo
+Sumario: O assinante avalia o conteúdo positivamente ou negativamente
+Ator Primário: Assinante
+Pré Condições: Execução Caso de Uso "Selecionar Conteúdo"
+Fluxo Principal:
+- O assinante avalia o conteúdo
+Fluxo Alternativo:
+- O assinante já avaliou o conteúdo e remove a avaliação
+- O assinante muda a avaliação de positiva para negativa
+Pós Condição: A plataforma notifica que o conteúdo foi avaliado e atualiza a porcentagem de aprovação do mesmo.
+
+
+
+Caso de Uso: Baixar Conteúdo
+Sumario: O assinante baixa um conteúdo para seu dispositivo
+Ator Primário: Assinante
+Pré Condições: Execução Caso de Uso "Selecionar Conteúdo"
+Fluxo Principal:
+- O assinante baixa o conteúdo
+Fluxo Alternativo:
+- O assinante já baixou o conteúdo e a plataforma notifica que o conteúdo já foi baixado
+Pós Condição: O download do conteúdo é iniciado e adicionado a lista de conteúdo baixados
+
+
+
+Caso de Uso: Assistir Conteúdo 
+Sumario: O assinante seleciona um conteudo para assistir
+Ator Primário: Assinante
+Pré Condições: Execução Caso de Uso "Selecionar Conteúdo"
+Fluxo Principal:
+- O assinante clica em assistir conteúdo
+Fluxo Alternativo:
+- O conteúdo já tinha sido iniciado anteriormente, sendo assim, o conteúdo continua de onde havia terminado
+Pós Condição: O conteúdo é iniciado
+
+
+
+Caso de Uso: Sugerir Conteúdo
+Sumario: O usuário sugere um conteúdo para a plataforma
+Ator Primário: Usuário
+Pré Condições: Acesso à plataforma
+Fluxo Principal:
+- O usuário digita o nome do conteúdo que quer sugerir
+- O usuário confirma as sugestões
+Fluxo Alternativo:
+- O usuário pode clicar em sugerir mais conteúdos
+Pós Condições: A plataforma confirma o envio da sugestão
