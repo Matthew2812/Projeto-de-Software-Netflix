@@ -85,6 +85,7 @@ Ator Primário: Assinante
 Pré Condições: Execução Caso de Uso "Selecionar Conteúdo"
 Fluxo Principal:
 - O assinante adiciona o conteúdo a lista de favoritos
+- A plataforma verifica se é possível adicionar o conteúdo à lista
 Fluxo alternativo:
 - O conteúdo já foi adicionado e o assinante o remove da lista
 Pós Condição: A plataforma notifica que o conteúdo foi adicionado a lista de favoritos
